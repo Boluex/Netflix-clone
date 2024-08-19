@@ -43,7 +43,7 @@ class ProfileCreate(View):
             'form':form
         }
         return render(request, 'profilecreate.html', context)
-
+#updated the movie list
 method_decorator(login_required, name='dispatch')
 class MovieList(View):
     def get(self, request, profile_id, *args, **kwargs):
